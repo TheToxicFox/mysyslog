@@ -18,12 +18,7 @@
 - `make deb`: собирает deb-пакет.
 
 ## Использование проекта
-- `mysyslog client`: Запуск клиента: ./mysyslog-client -m "Test Message" -l -d -f -p /var/log/test.log
-- m <message>: Сообщение, которое вы хотите записать в лог.
-- l <log_level>: Уровень лога (0 - DEBUG, 1 - INFO, 2 - WARN, 3 - ERROR, 4 - CRITICAL).
-- d <driver>: Драйвер вывода (0 для текстового формата, 1 для JSON).
-- f <format>: Выход формата (0 для текстового формата, 1 для JSON).
-- p <path>: Путь к файлу для записи логов.
+- `mysyslog client`: Запуск клиента: ./mysyslog-client
 - `mysyslog daemon`: Файл конфигурации '/etc/mysyslog/mysyslog.cfg' и запуск демона:
 1. sudo systemctl start mysyslog-daemon
 2. sudo systemctl enable mysyslog-daemon 
