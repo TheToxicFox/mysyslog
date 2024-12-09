@@ -3,10 +3,10 @@
 1.  Создаем конфигурационный файл:
    *  `sudo mkdir -p /etc/mysyslog`
    *  `sudo touch /etc/mysyslog/mysyslog.cfg`
+   *  
+2. Создаеи systemd-сервис для mysyslog-daemon: `sudo cp mysyslog-daemon.service /etc/systemd/system/`
 
-5. Создаеи systemd-сервис для mysyslog-daemon: `sudo cp mysyslog-daemon.service /etc/systemd/system/`
-
-6. Запускаем daemon и добавляем его в автозагрузку:
+3. Запускаем daemon и добавляем его в автозагрузку:
    * `sudo systemctl daemon-reload`
    * `sudo systemctl start mysyslog-daemon`
    * `sudo systemctl enable mysyslog-daemon`
