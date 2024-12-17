@@ -1,0 +1,10 @@
+[Unit]
+Description=My Syslog Daemon
+
+[Service]
+Type=simple
+ExecStart=/path/to/your/mysyslog-daemon
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
